@@ -1,5 +1,5 @@
 language: python
 install:
-  - pip install tox 
+  - pip install tox cython
 script:
   - tox
