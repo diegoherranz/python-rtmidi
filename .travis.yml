@@ -4,6 +4,10 @@ env:
     - TOXENV=py33
     - TOXENV=py34
     - TOXENV=py35
+addons:
+  apt:
+    packages:
+    - libasound2-dev
 install:
   - pip install tox cython
 script:
