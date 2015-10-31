@@ -8,3 +8,8 @@ install:
   - pip install tox cython
 script:
   - tox
+after_script:
+  - cat /home/travis/build/diegoherranz/python-rtmidi/.tox/py27/log/py27-2.log
+  - cat /home/travis/build/diegoherranz/python-rtmidi/.tox/py33/log/py33-2.log
+  - cat /home/travis/build/diegoherranz/python-rtmidi/.tox/py34/log/py34-2.log
+  - cat /home/travis/build/diegoherranz/python-rtmidi/.tox/py35/log/py35-2.log
