@@ -8,8 +8,9 @@ addons:
   apt:
     packages:
     - libasound2-dev
-    - alsa-utils
+    - alsa-base
     - alsa-oss
+    - alsa-utils
 install:
   - pip install tox cython
 script:
